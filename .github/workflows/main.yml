@@ -1,0 +1,30 @@
+
+name: Main
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
+
+      - name: Install Dependencies 💿
+        run: npm ci
+
+      - name: Run Linter ⚡
+        run: npm run lint
+        
+      - name: Run tests ✅
+        run: npm run test
+        
+      - name: Compile Typecript 🔨
+        run: npm run build
