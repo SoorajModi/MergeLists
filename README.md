@@ -1,6 +1,6 @@
-# TypeScript Library Template
+# Merge Lists
 
-A sample template repository for a typescript library.
+Merge two lists and remove duplicates.
 
 ## How to run
 
@@ -15,16 +15,3 @@ Run linter: `npm run lint`
 Run linter and fix errors: `npm run lint-fix`
 
 Compile typescript: `npm run build`
-
-## Test framework
-
-[Jest](https://jestjs.io/) Javascript Testing framework.
-
-## Linter
-
-[ESLint](https://eslint.org/) linter, with [AirBnB](https://www.npmjs.com/package/eslint-config-airbnb) base config 
-plus [Prettier](https://www.npmjs.com/package/prettier-eslint). Uses commonjs.
-
-## License
-
-MIT License.
